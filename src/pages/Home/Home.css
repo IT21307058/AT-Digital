@@ -365,8 +365,8 @@
 }
 
 .accordian {
-    height: Hug (392px);
-    width: Fixed (896px);
+    height: Hug (76px);
+    width: Fixed (846px);
     margin-bottom: 15px;
 }
 
@@ -421,4 +421,61 @@
     font-weight: 400;
     line-height: 30px;
     color: #6F6C90;
+}
+
+@media screen and (max-width: 1200px){
+    .accordian-section {
+        margin-left: 152px;
+        margin-right: 152px;
+        margin-bottom: 20px;
+    }
+
+    .accordian {
+        width: Fill (848px);
+        height: Hug (28px);
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px){
+    .accordian-section {
+        margin-left: 42px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+
+    .accordian {
+        width: Fill (686px);
+        height: Hug (104px);
+    }
+    
+    
+}
+
+@media screen and (max-width: 375px){
+    .accordian-section {
+        margin-left: 20px;
+        margin-right: 21px;
+        margin-bottom: 20px;
+    }
+
+    .accordian {
+        width: Fill (334px);
+        height: Hug (160px);
+    }
+    
+
+    .title-content h2 {
+        font-size: 20px;
+    }
+    
+    .title-content{
+        gap: 13px;
+    }
+
+    .answer-content p {
+        font-size: 16px;
+    }
+    
 }
