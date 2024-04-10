@@ -1,0 +1,120 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100.11px;
+    height: 77px;
+    padding: 26px 80px 26px 80px;
+    background-color: var(--primaryColor);
+    color: var(#fff);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    /* width: 381px;
+    height: 17px; */
+}
+
+nav a{
+    margin-right:28px;
+    margin-top: 26px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--accentColor);
+}
+
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: var(#fff);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1200px){
+    header{
+        width: 1200px;
+        height: 77px;
+        gap: 100.11px;
+        padding: 26px 60px;
+        background-color: var(--primaryColor);
+        color: var(#fff);
+    }
+
+    nav a {
+        margin: 0 20px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        width: 768px;
+        height: 77px;
+        gap: 80.11px;
+        padding: 26px 40px;
+        background-color: var(--primaryColor);
+        color: var(#fff);
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        /* width: 381px;
+        height: 17px; */
+    }
+
+    nav a {
+        margin: 0 5px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+    header .nav-btn{
+        width: 375px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav{
+        position: fixed;
+        top:0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: var(--primaryColor);
+        transition: transform 1s;
+        transform: translateY(-100%);
+        z-index: 999;
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
+}
