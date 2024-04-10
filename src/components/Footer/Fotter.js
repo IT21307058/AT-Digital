@@ -14,7 +14,7 @@ const Fotter = () => {
                         </div>
                     </div>
                     <div className='sb__fotter-links-alt'>
-                        <div className='sb__fotter-links_div'>
+                        <div className='sb__fotter-links_div padding-t1'>
                             <h4>Our Technologies</h4>
                             <a href="/resource">
                                 <p className='text-link'>ReactJS</p>
@@ -29,7 +29,7 @@ const Fotter = () => {
                                 <p className='text-link'>NodeJS</p>
                             </a>
                         </div>
-                        <div className='sb__fotter-links_div'>
+                        <div className='sb__fotter-links_div padding-t'>
                             <h4>Our Services</h4>
                             <a href="/resource">
                                 <p className='text-link'>Sociel Media Marketing</p>
@@ -56,7 +56,6 @@ const Fotter = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 

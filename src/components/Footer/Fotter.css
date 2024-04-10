@@ -2,6 +2,10 @@
     padding: 40px 80px 20px 80px;
 }
 
+*{
+    font-family: "Inter", sans-serif;
+}
+
 .fotter{
     background-color: var(--primaryColor);
 }
@@ -19,14 +23,14 @@
     flex-wrap: wrap;
     width: 100%;
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 40px;
 }
 
 .sb__fotter-links-alt{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 50px;
+    gap: 128px;
 }
 
 a{
@@ -99,6 +103,13 @@ hr{
     font-weight: 600;
 }
 
+@media screen and (max-width: 1200px){
+    .sb__fotter-links-alt{
+        gap: 20px;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     .sb__fotter-links div {
         margin: 1rem 0;
@@ -108,11 +119,6 @@ hr{
     .sb__fotter-links{
         flex-direction: column;
     }
-
-    /* .sb_fotter-below{
-        flex-direction: column;
-        justify-content: left;
-    } */
 
     .sb__fotter-below-links{
         flex-direction: column;
@@ -126,33 +132,55 @@ hr{
 }
 
 @media screen and (max-width: 375px) {
-    .sb__fotter-links div {
-        margin: 1rem 0;
-
+    .sb__fotter{
+        padding: 0;
+        /* margin: 0; */
     }
 
-    .sb__fotter-links{
+    .sb__fotter-links-div{
+        padding: 0px 20px;
+    }
+
+    .padding-t1{
+        height: Hug (141px);
+        width: Fixed (216px);
+        padding: 0px 20px;
+    }
+
+    .padding-t{
+        height: Hug (112px);
+        width: Fixed (216px);
+        padding: 0px 20px;
+    }
+
+    .sb__fotter-links-div {
+        /* Remove fixed width and height */
+        width: auto;
+        height: auto;
+    }
+    
+    .sb__fotter-links-alt {
+        /* Remove fixed width and height */
+        width: auto;
+        height: auto;
+        /* Add styles to center the content */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .sb__fotter-below {
+        /* Adjust styles to center the content */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
-
-    .sb__fotter-links-alt{
-        height: 293px;
-        width: 335px;
-        flex-direction: column;
-    }
-
-    .sb_fotter-below{
-        flex-direction: column;
-        justify-content: left;
-    }
-
-    .sb__fotter-below-links{
-        flex-direction: column;
-    }
-
+    
+    
     .sb__fotter-below-links p {
-        margin-left: 0rem;
-        margin-top: 1rem;
+        margin: 5px 0; 
     }
     
 }

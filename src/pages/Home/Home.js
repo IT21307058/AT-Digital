@@ -42,7 +42,7 @@ const Home = () => {
           <section className='hero1' />
           <div className='content1'>
             <p>
-              We crush your competitors, goals, and sales records - without the B.S.
+              We crush Your Competitors, Goals, And Sales Records - Without The B.S.
             </p>
             <a href="#">Get Free Consultation</a>
           </div>
@@ -51,7 +51,7 @@ const Home = () => {
         <section className='hero'>
           <div className='content'>
             <p>
-              We crush your competitors, goals, and sales records - without the B.S.
+              We crush Your Competitors, Goals, And Sales Records - Without The B.S.
             </p>
             <a href="#">Get Free Consultation</a>
           </div>
@@ -102,21 +102,23 @@ const Home = () => {
         </div>
       )}
 
-      <div className='accordian-section'>
-      <h2 className='accordian-header'>Frequently asked questions</h2>
-        <div className='wrapper'>
-          <div className='accordian'>
-            {data.map((item, i) => (
-              <div className='item'>
-                <div className={`title-content ${selected === i ? 'active': ''}`} onClick={() => toggle(i)}>
-                  <h2>{item.question}</h2>
-                  <span>{selected === i ? '-' : '+'}</span>
+      <div className='sectionx'>
+        <div className='accordian-section'>
+          <h2 className='accordian-header'>Frequently asked questions</h2>
+          <div className='wrapper'>
+            <div className='accordian'>
+              {data.map((item, i) => (
+                <div className='item'>
+                  <div className={`title-content ${selected === i ? 'active' : ''}`} onClick={() => toggle(i)}>
+                    <h2>{item.question}</h2>
+                    <span>{selected === i ? '-' : '+'}</span>
+                  </div>
+                  <div className={
+                    selected == i ? 'answer-content show' : 'answer-content'
+                  }><p>{item.answer}</p></div>
                 </div>
-                <div className={
-                  selected == i ? 'answer-content show' : 'answer-content'
-                }><p>{item.answer}</p></div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

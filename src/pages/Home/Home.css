@@ -2,11 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    /* width: 1440px; */
 }
+
+/* .container{
+    width: 1440px;
+} */
 
 .hero {
     display: flex;
-    height: 763px;
+    width: 1440px;
+    height: 700px;
     top: -40px;
     background-image: url("../../assets/image/Hero\ Image.png");
     background-size: cover;
@@ -20,7 +27,7 @@
     /* display: flex; */
     /* flex-direction: column; */
     width: 630px;
-    height: Hug(306px);
+    height: 306px;
     /* margin: 0 auto; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -69,19 +76,15 @@
 .content1 {
     /* display: flex; */
     /* flex-direction: column; */
-    width: 100%;
-    height: Hug(258px);
-    /* margin: 0 auto; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
+    width: 768px;
+    height: 258px;
     color: white;
     padding: 24px 40px 32px 40px;
     background-image: linear-gradient(to right, #4DCA79 0%, #1CBDDD 100%);
 }
 
 .content1 p {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 700;
     line-height: 48px;
     width: 688px;
@@ -89,14 +92,12 @@
     margin-bottom: 20px;
     letter-spacing: 2px;
     text-align: left;
-    font-family: 'Inter';
-
 }
 
 .content1 a {
     color: inherit;
-    width: Hug (174px);
-    height: Hug (14px);
+    width: 214px;
+    height: 38px;
     text-decoration: none;
     margin-top: 236px;
     background-color: #F28D35;
@@ -121,8 +122,8 @@
     .content1 {
         /* display: flex; */
         /* flex-direction: column; */
-        width: Fixed(375px);
-        height: Hug(294px);
+        width: 375px;
+        height: 294px;
         /* margin: 0 auto; */
         /* justify-content: center; */
         /* align-items: center; */
@@ -135,7 +136,7 @@
     .content1 p {
         font-size: 36px;
         font-weight: 700;
-        line-height: 48px;
+        line-height: 36px;
         width: 335px;
         height: 180px;
         margin-bottom: 20px;
@@ -147,8 +148,8 @@
 
     .content1 a {
         color: inherit;
-        width: Hug (214px);
-        height: Hug (38px);
+        width: 214px;
+        height: 38px;
         text-decoration: none;
         margin-top: 236px;
         background-color: #F28D35;
@@ -172,6 +173,10 @@
     margin-left: 188px;
     margin-right: 188px;
     gap: 108px;
+}
+
+.sector{
+    width: 1440px;
 }
 
 .home-img {
@@ -205,7 +210,6 @@
     color: #000000;
     font-family: 'Inter';
     margin-bottom: 20px;
-
 }
 
 .text-box a {
@@ -337,9 +341,14 @@
 
 /* Accordian */
 
+.sectionx{
+    width: 1440px;
+}
+
 .accordian-section {
     /* height: Hug (392px); */
     /* width: Fixed (896px); */
+    /* width: 1440px; */
     margin-left: 297px;
     margin-right: 297px;
     margin-bottom: 20px;
@@ -428,6 +437,7 @@
         margin-left: 152px;
         margin-right: 152px;
         margin-bottom: 20px;
+        width: 896px;
     }
 
     .accordian {
@@ -443,6 +453,7 @@
         margin-left: 42px;
         margin-right: 40px;
         margin-bottom: 20px;
+        width: 686px;
     }
 
     .accordian {
@@ -458,11 +469,13 @@
         margin-left: 20px;
         margin-right: 21px;
         margin-bottom: 20px;
+        width: 334px;
     }
 
     .accordian {
         width: Fill (334px);
         height: Hug (160px);
+        padding: 24px;
     }
     
 

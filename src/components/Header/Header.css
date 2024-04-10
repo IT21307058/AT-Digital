@@ -2,11 +2,17 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 100.11px;
+    gap: 80px;
+    width: 1440px;
     height: 77px;
     padding: 26px 80px 26px 80px;
     background-color: var(--primaryColor);
     color: var(#fff);
+}
+
+.logo{
+    width: 238.89px;
+    height: 36.11px;
 }
 
 nav {
@@ -80,8 +86,12 @@ header .nav-btn {
 
 
 @media only screen and (max-width: 375px){
-    header .nav-btn{
+    header{
         width: 375px;
+        height: 75px;
+    }
+
+    header .nav-btn{
         visibility: visible;
         opacity: 1;
     }
@@ -89,8 +99,8 @@ header .nav-btn {
     header nav{
         position: fixed;
         top:0;
-        left: 0;
-        height: 100vh;
+        left:0;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -99,7 +109,7 @@ header .nav-btn {
         gap: 15px;
         background-color: var(--primaryColor);
         transition: transform 1s;
-        transform: translateY(-100%);
+        transform: translateY(-100vh);
         z-index: 999;
     }
 
@@ -115,6 +125,12 @@ header .nav-btn {
 
     nav a{
         font-size: 15px;
+    }
+
+    .nav-btn{
+        margin-bottom: 30px;
+        margin-left: -32px;
+        color: white;
     }
 
 }
