@@ -6,6 +6,15 @@ import search from '../../assets/image/search.png'
 const Home = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
   const [isTinyScreen, setIsTinyScreen] = useState(window.innerWidth <= 375);
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i) => {
+    if (selected == i) {
+      return setSelected(null);
+    }
+
+    setSelected(i);
+  }
 
   useEffect(() => {
     const handleResize = () => {
@@ -92,8 +101,42 @@ const Home = () => {
 
         </div>
       )}
+
+      <div className='accordian-section'>
+      <h2 className='accordian-header'>Frequently asked questions</h2>
+        <div className='wrapper'>
+          <div className='accordian'>
+            {data.map((item, i) => (
+              <div className='item'>
+                <div className={`title-content ${selected === i ? 'active': ''}`} onClick={() => toggle(i)}>
+                  <h2>{item.question}</h2>
+                  <span>{selected === i ? '-' : '+'}</span>
+                </div>
+                <div className={
+                  selected == i ? 'answer-content show' : 'answer-content'
+                }><p>{item.answer}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   )
 }
 
 export default Home
+
+const data = [
+  {
+    question: 'Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?',
+    answer: 'Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.'
+  },
+  {
+    question: 'Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?',
+    answer: 'Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.'
+  },
+  {
+    question: 'Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?',
+    answer: 'Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.'
+  }
+]
