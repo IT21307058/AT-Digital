@@ -333,6 +333,8 @@
         letter-spacing: 0.4px;
         color: #6B3CC9;
         margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
 
     }
 
@@ -496,7 +498,7 @@
     .accordian-section {
         margin-left: 20px;
         margin-right: 21px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         width: 334px;
     }
 

@@ -46,13 +46,8 @@ const Fotter = () => {
 
                 <hr />
                 <div className='sb_fotter-below'>
-                    {/* <div className='sb__fotter-copyright'>
-                        <p>CodeInn. All right reserved</p>
-                    </div> */}
-                    {/* <div className='sb__fotter-below-links'> */}
                     <a href="/terms"><div><p className='text-link'>Terms & Conditions</p></div></a>
                     <a href="/terms"><div><p className='text-link'>Privacy Policy</p></div></a>
-                    {/* </div> */}
                 </div>
             </div>
         </div>
