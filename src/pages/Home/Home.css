@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
     /* width: 1440px; */
 }
 
@@ -24,14 +24,8 @@
     top: 354px;
     left: 80px;
     right: 730px;
-    /* display: flex; */
-    /* flex-direction: column; */
     width: 630px;
     height: 306px;
-    /* margin: 0 auto; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
     color: white;
     padding: 24px 40px 32px 40px;
     background-image: linear-gradient(to right, #4DCA79 0%, #1CBDDD 100%);
@@ -39,34 +33,37 @@
 }
 
 .content p {
+    width: 556px;
+    height: 192px;
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
-    width: 556px;
-    height: 192px;
     margin-bottom: 20px;
-    letter-spacing: 2px;
+    letter-spacing: -2%;
     text-align: left;
+    font-family: "Inter", sans-serif;
 
 }
 
 .content a {
     color: inherit;
-    width: Hug (214px);
-    height: Hug (38px);
+    width: 214px;
+    height: 38px;
     text-decoration: none;
-    margin-top: 236px;
+    margin-top: 20px;
     background-color: #F28D35;
     padding: 12px 20px 12px 20px;
     font-size: 14px;
     line-height: 14px;
     font-weight: 700;
     border-radius: 4px;
+    margin-bottom: 32px;
+    font-family: "Inter", sans-serif;
 }
 
 .hero1 {
     display: flex;
-    width: 100%;
+    width: 768px;
     height: 448px;
     top: -40px;
     background-image: url("../../assets/image/Hero\ Image.png");
@@ -84,13 +81,13 @@
 }
 
 .content1 p {
-    font-size: 38px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 48px;
     width: 688px;
     height: 144px;
     margin-bottom: 20px;
-    letter-spacing: 2px;
+    letter-spacing: -2%;
     text-align: left;
 }
 
@@ -108,11 +105,33 @@
     border-radius: 4px;
 }
 
+@media screen and (max-width: 1200px) {
+    .hero {
+        width: 1200px;
+        height: 700px;
+        top: 77px;
+    }
+    
+    .content {
+        position: absolute;
+        top: 354px;
+        left: 60px;
+        right: 518px;
+        width: 622px;
+        height: 306px;
+        color: white;
+        padding: 24px 40px 32px 40px;
+        background-image: linear-gradient(to right, #4DCA79 0%, #1CBDDD 100%);
+    
+    }
+    
+}
+
 
 @media screen and (max-width: 375px) {
     .hero1 {
         display: flex;
-        width: 100%;
+        width: 375px;
         height: 218px;
         top: 70px;
         background-image: url("../../assets/image/Hero\ Image.png");
@@ -124,6 +143,7 @@
         /* flex-direction: column; */
         width: 375px;
         height: 294px;
+        top: 295px;
         /* margin: 0 auto; */
         /* justify-content: center; */
         /* align-items: center; */
@@ -142,7 +162,7 @@
         margin-bottom: 20px;
         letter-spacing: -2px;
         text-align: left;
-        font-family: 'Inter';
+        font-family: "Inter", sans-serif;
 
     }
 
@@ -158,10 +178,13 @@
         line-height: 14px;
         font-weight: 700;
         border-radius: 4px;
-        font-family: 'Inter';
+        letter-spacing: -2%;
+        font-family: "Inter", sans-serif;
     }
 
 }
+
+/* Card Container */
 
 .card-container {
     width: 1064px;
@@ -199,6 +222,7 @@
     letter-spacing: 0.4px;
     color: #6B3CC9;
     margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
 
 }
 
@@ -208,7 +232,11 @@
     line-height: 19.36px;
     letter-spacing: 0.4px;
     color: #000000;
-    font-family: 'Inter';
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.item{
     margin-bottom: 20px;
 }
 
@@ -226,7 +254,7 @@
     border-radius: 4px;
     letter-spacing: -2%;
     color: white;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
 }
 
 @media screen and (max-width: 1200px) {

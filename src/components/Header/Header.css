@@ -2,7 +2,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    gap: 660.11px;
     width: 1440px;
     height: 77px;
     padding: 26px 80px 26px 80px;
@@ -23,8 +23,12 @@ nav {
 }
 
 nav a{
-    margin-right:28px;
+    font-family: "Inter", sans-serif;
+    margin-right:20px;
     margin-top: 26px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
     color: white;
     text-decoration: none;
 }
@@ -48,14 +52,15 @@ header .nav-btn {
     header{
         width: 1200px;
         height: 77px;
-        gap: 100.11px;
+        gap: 460.11px;
         padding: 26px 60px;
         background-color: var(--primaryColor);
         color: var(#fff);
     }
 
     nav a {
-        margin: 0 20px;
+        margin-top:26px;
+        margin-right: 20px;
         color: white;
         text-decoration: none;
     }
@@ -65,11 +70,13 @@ header .nav-btn {
     header{
         width: 768px;
         height: 77px;
-        gap: 80.11px;
+        gap: 70.11px;
         padding: 26px 40px;
         background-color: var(--primaryColor);
         color: var(#fff);
     }
+
+
     nav {
         display: flex;
         align-items: center;
@@ -78,9 +85,10 @@ header .nav-btn {
     }
 
     nav a {
-        margin: 0 5px;
-        color: white;
-        text-decoration: none;
+        margin-top: 26px;
+        margin-right: 10px;
+        /* color: white;
+        text-decoration: none; */
     }
 }
 
@@ -89,6 +97,8 @@ header .nav-btn {
     header{
         width: 375px;
         height: 75px;
+        margin: 0;
+        padding: 0;
     }
 
     header .nav-btn{
@@ -96,18 +106,25 @@ header .nav-btn {
         opacity: 1;
     }
 
+    header .toggle-btn{
+        color: #fff;
+    }
+
     header nav{
         position: fixed;
         top:0;
         left:0;
-        height: 100%;
-        width: 100%;
+        height: 812px;
+        width: 375px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: start;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 16px;
         gap: 15px;
-        background-color: var(--primaryColor);
+        background-color: white;
         transition: transform 1s;
         transform: translateY(-100vh);
         z-index: 999;
@@ -125,12 +142,14 @@ header .nav-btn {
 
     nav a{
         font-size: 15px;
+        color: var(--primaryColor);
+        margin-bottom: 32px;
     }
 
     .nav-btn{
         margin-bottom: 30px;
         margin-left: -32px;
-        color: white;
+        color: var(--primaryColor);
     }
 
 }

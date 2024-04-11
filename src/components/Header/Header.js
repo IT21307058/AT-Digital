@@ -31,7 +31,7 @@ const Header = () => {
                     </button>
                 </nav>
 
-                <button className='nav-btn' onClick={showNavbar}>
+                <button className='nav-btn toggle-btn' onClick={showNavbar}>
                     <FaBars />
                 </button>
 
