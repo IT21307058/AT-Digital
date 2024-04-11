@@ -103,6 +103,8 @@ hr{
     font-weight: 600;
 }
 
+
+/* Screen Width 1200px or below */
 @media screen and (max-width: 1200px){
 
     .fotter{
@@ -120,6 +122,8 @@ hr{
     
 }
 
+
+/* Screen Width 768px or below */
 @media screen and (max-width: 768px) {
     .fotter{
         width: 768px;
@@ -144,6 +148,7 @@ hr{
     
 }
 
+/* Screen Width 375px or below */
 @media screen and (max-width: 375px) {
     .fotter{
         width: 375px;
@@ -152,7 +157,6 @@ hr{
 
     .sb__fotter{
         padding: 0;
-        /* margin: 0; */
     }
 
     .sb__fotter-links-div{

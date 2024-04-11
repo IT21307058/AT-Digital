@@ -15,7 +15,6 @@ const Header = () => {
     return (
 
         <header className='logo-nav-gap'>
-            {/* <h3></h3> */}
             <img src={logo} alt="Description of the image" className='logo' />
 
             <div>
@@ -26,11 +25,13 @@ const Header = () => {
                     <a href="#">Contact Us</a>
                     <a href="#">Careers</a>
 
+                    {/* Close button */}
                     <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                         <FaTimes />
                     </button>
                 </nav>
 
+                {/* Toggle button */}
                 <button className='nav-btn toggle-btn' onClick={showNavbar}>
                     <FaBars />
                 </button>

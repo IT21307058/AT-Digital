@@ -4,6 +4,8 @@ import dekstop from '../../assets/image/Dekstop.png'
 import search from '../../assets/image/search.png'
 
 const Home = () => {
+  //  code dynamically updates the isSmallScreen and isTinyScreen states based on the window width, 
+  // and provides a mechanism (toggle function) to select and deselect items.
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
   const [isTinyScreen, setIsTinyScreen] = useState(window.innerWidth <= 375);
   const [selected, setSelected] = useState(null);
@@ -22,16 +24,9 @@ const Home = () => {
       setIsTinyScreen(window.innerWidth <= 375);
     };
 
-    // const handleResize2 = () => {
-    // };
-
     window.addEventListener('resize', handleResize);
-    // window.addEventListener('resize2', handleResize2);
-
-    // Cleanup
     return () => {
       window.removeEventListener('resize', handleResize);
-      // window.removeEventListener('resize2', handleResize2);
     };
   }, []);
 
@@ -128,6 +123,7 @@ const Home = () => {
 
 export default Home
 
+// dumy data
 const data = [
   {
     question: 'Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?',

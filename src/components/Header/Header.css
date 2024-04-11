@@ -18,8 +18,6 @@ header{
 nav {
     display: flex;
     align-items: center;
-    /* width: 381px;
-    height: 17px; */
 }
 
 nav a{
@@ -48,6 +46,7 @@ header .nav-btn {
     font-size: 1.8rem;
 }
 
+/* Screen Width 1200px or below */
 @media only screen and (max-width: 1200px){
     header{
         width: 1200px;
@@ -66,6 +65,7 @@ header .nav-btn {
     }
 }
 
+/* Screen Width 768px or below */
 @media only screen and (max-width: 768px){
     header{
         width: 768px;
@@ -80,19 +80,15 @@ header .nav-btn {
     nav {
         display: flex;
         align-items: center;
-        /* width: 381px;
-        height: 17px; */
     }
 
     nav a {
         margin-top: 26px;
         margin-right: 10px;
-        /* color: white;
-        text-decoration: none; */
     }
 }
 
-
+/* Screen Width 375px or below */
 @media only screen and (max-width: 375px){
     header{
         width: 375px;

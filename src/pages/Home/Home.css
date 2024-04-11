@@ -2,13 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Inter", sans-serif; */
-    /* width: 1440px; */
 }
-
-/* .container{
-    width: 1440px;
-} */
+/* *************************** */
+/* Hero Section */
+/* *************************** */
 
 .hero {
     display: flex;
@@ -61,6 +58,7 @@
     font-family: "Inter", sans-serif;
 }
 
+/* Screen Width 768px or below */
 .hero1 {
     display: flex;
     width: 768px;
@@ -71,8 +69,6 @@
 }
 
 .content1 {
-    /* display: flex; */
-    /* flex-direction: column; */
     width: 768px;
     height: 258px;
     color: white;
@@ -105,6 +101,7 @@
     border-radius: 4px;
 }
 
+/* Screen Width 1200px or below */
 @media screen and (max-width: 1200px) {
     .hero {
         width: 1200px;
@@ -127,7 +124,7 @@
     
 }
 
-
+/* Screen Width 375px or below */
 @media screen and (max-width: 375px) {
     .hero1 {
         display: flex;
@@ -139,15 +136,9 @@
     }
 
     .content1 {
-        /* display: flex; */
-        /* flex-direction: column; */
         width: 375px;
         height: 294px;
         top: 295px;
-        /* margin: 0 auto; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* text-align: center; */
         color: white;
         padding: 24px 20px 32px 20px;
         background-image: linear-gradient(to right, #4DCA79 0%, #1CBDDD 100%);
@@ -184,14 +175,15 @@
 
 }
 
-/* Card Container */
+/* ******************************* */
+/* Card Container Section*/
+/* ******************************* */
 
 .card-container {
     width: 1064px;
     height: 414px;
     display: flex;
     align-items: center;
-    /* top: 857px; */
     left: 188px;
     margin-left: 188px;
     margin-right: 188px;
@@ -257,6 +249,7 @@
     font-family: "Inter", sans-serif;
 }
 
+/* Screen Width 1200px or below */
 @media screen and (max-width: 1200px) {
     .card-container {
         width: 896px;
@@ -284,6 +277,7 @@
     }
 }
 
+/* Screen Width 768px or below */
 @media screen and (max-width: 768px) {
     .card-container {
         width: 688px;
@@ -310,6 +304,7 @@
     }
 }
 
+/* Screen Width 375px or below */
 @media screen and (max-width: 375px) {
     .card-container1 {
         width: Fixed(335px);
@@ -369,21 +364,18 @@
 
 }
 
-/* Accordian */
+/* ******************************* */
+/* Accordian Section*/
+/* ******************************* */
 
 .sectionx{
     width: 1440px;
 }
 
 .accordian-section {
-    /* height: Hug (392px); */
-    /* width: Fixed (896px); */
-    /* width: 1440px; */
     margin-left: 297px;
     margin-right: 297px;
     margin-bottom: 20px;
-    /* top: 1711px; */
-    /* left: 152px; */
 }
 
 .accordian-header {
@@ -462,6 +454,7 @@
     color: #6F6C90;
 }
 
+/* Screen Width 1200px or below */
 @media screen and (max-width: 1200px){
     .accordian-section {
         margin-left: 152px;
@@ -478,6 +471,7 @@
     
 }
 
+/* Screen Width 768px or below */
 @media screen and (max-width: 768px){
     .accordian-section {
         margin-left: 42px;
@@ -494,6 +488,7 @@
     
 }
 
+/* Screen Width 375px or below */
 @media screen and (max-width: 375px){
     .accordian-section {
         margin-left: 20px;
